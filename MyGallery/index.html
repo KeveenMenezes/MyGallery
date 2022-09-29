@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Componentes</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./tesi.css" />
+    <script src="./tesi.js"></script>
+</head>
+
+<body>
+    <header class="headerBar dark">
+        <div class="appName">Aplicativo</div>
+        <div class="badge warning">3</div>
+    </header>
+    <nav class="navBar">
+        <div class="buttonGroup">
+            <button id="tab1" class="button tab active" for="componente1">
+                Texto
+            </button>
+            <button id="tab3" class="button tab" for="componente3">
+                Formulário
+            </button>
+            <button id="tab4" class="button tab" for="componente4">Lista</button>
+        </div>
+    </nav>
+    <div id="componente1" class="component">
+        <div class="componentHeader">
+            <h1 class="componentTitle">Texto com título fixo</h1>
+            <button class="button primary"><img src="./assets/plus_white.png" /></button>
+        </div>
+        <div class="componentContent">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra
+                eu lacus venenatis luctus. Donec mauris est, faucibus sit amet libero
+                elementum, gravida commodo felis. Sed blandit velit eros, sed imperdiet
+                odio ullamcorper at. Mauris tincidunt consectetur semper. Nullam
+                facilisis, nunc ut viverra interdum, dui diam ornare neque, id sodales
+                quam ex pharetra diam. Nullam ac elementum metus. Fusce lobortis augue
+                ac neque placerat fermentum. Nulla in malesuada nisi, dictum mollis
+                tellus. Pellentesque sodales, turpis in aliquet consectetur, odio tellus
+                accumsan urna, vitae vulputate lacus urna sed nulla. Nulla auctor enim
+                non justo blandit semper a ac ipsum. Phasellus gravida malesuada diam,
+                vitae venenatis tellus scelerisque eget. Fusce varius diam ut aliquam
+                suscipit.
+            </p>
+            <p>
+                Cras sollicitudin molestie vestibulum. Class aptent taciti sociosqu ad
+                litora torquent per conubia nostra, per inceptos himenaeos. Sed nulla
+                libero, finibus et lobortis vitae, pretium non massa. Suspendisse
+                potenti. Curabitur a imperdiet velit, tristique semper ex. Aliquam erat
+                volutpat. Morbi semper sapien arcu, eu vestibulum mi aliquet eget. Sed
+                laoreet dignissim velit, at sagittis sapien varius et. Suspendisse a
+                condimentum neque, in bibendum quam. Suspendisse leo mauris,
+                sollicitudin quis mauris sit amet, lobortis ultricies turpis. Maecenas
+                vulputate, diam a pharetra cursus, sem arcu imperdiet libero, in feugiat
+                orci neque at est. Pellentesque odio urna, efficitur nec placerat nec,
+                pellentesque in enim.
+            </p>
+            <p>
+                Sed nisl dui, ultrices et diam ac, ultricies luctus sapien. Sed iaculis
+                velit aliquam justo tempor efficitur. Proin tincidunt suscipit urna at
+                tincidunt. Ut euismod congue lobortis. Aliquam vel rutrum eros. Fusce
+                faucibus nisl nisi, at congue velit tincidunt a. Sed scelerisque, dolor
+                sit amet sollicitudin elementum, orci mi ornare ante, quis ornare lorem
+                nulla in nunc. Quisque eget mi nec leo finibus consequat et a velit.
+            </p>
+            <p>
+                Praesent eu justo quis massa dictum efficitur in in risus. Phasellus
+                pellentesque eros diam, at consectetur augue egestas sit amet. Aliquam
+                ac velit neque. Phasellus fringilla, augue quis fermentum sodales,
+                tellus felis pretium dui, id vehicula augue orci sed sapien. Integer
+                posuere elit mauris, et rhoncus risus posuere in. Integer porttitor nisl
+                luctus efficitur commodo. Fusce vel urna cursus, dapibus felis non,
+                dignissim est. Mauris scelerisque nec risus ac egestas. In quis erat
+                arcu. Nullam elementum eget mauris non finibus. Etiam consequat semper
+                purus. Nullam vel lacinia nulla. Nullam facilisis maximus ex, ac
+                vehicula lectus elementum sit amet. Maecenas non posuere quam. Donec
+                maximus blandit ligula porta fringilla. Praesent tempor dapibus
+                malesuada.
+            </p>
+            <p>
+                Phasellus et pharetra felis. Nulla nunc purus, consequat quis tempor
+                vitae, convallis sed ex. Mauris id ante sit amet nibh lacinia mattis.
+                Nam iaculis sit amet massa a rutrum. Morbi sit amet faucibus nulla, ut
+                euismod lacus. Quisque sed ex tellus. Morbi tincidunt nisl sodales nunc
+                sodales, vel interdum augue dapibus. Cras elementum urna purus, sed
+                semper lacus porta at. Donec id consectetur mi. Aenean id metus tempor
+                purus laoreet venenatis id sed diam. Nam lobortis ligula non sem
+                rhoncus, egestas dapibus turpis tincidunt.
+            </p>
+        </div>
+    </div>
+    <div id="componente3" class="component">
+        <div class="componentContent">
+            <h1>Formulário</h1>
+            <div class="field mt1">
+                <label class="fifth">Nome</label>
+                <input type="text" autocomplete="off" />
+            </div>
+            <div class="field mt1">
+                <label class="fifth">Sobrenome</label>
+                <input class="valid" type="text" autocomplete="off" />
+            </div>
+            <div class="field mt1">
+                <label class="fifth">Senha</label>
+                <input class="invalid" type="password" />
+            </div>
+            <div class="buttonGroup end mt1">
+                <button class="button primary quarter">Ok</button>
+            </div>
+        </div>
+    </div>
+    <div id="componente4" class="component">
+        <div class="componentContent">
+            <h1>Lista</h1>
+            <ul class="list mt1">
+                <li>Item 1</li>
+                <li class="active">Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
